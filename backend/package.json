@@ -1,0 +1,27 @@
+{
+  "name": "ovilla-backend",
+  "version": "1.0.0",
+  "description": "API de Ovilla - plataforma de cursos de crochet (PostgreSQL)",
+  "type": "module",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "db:reset": "node scripts/init-db.js",
+    "crear-admin": "node scripts/crear-admin.js",
+    "crear-env": "node scripts/crear-env.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.4",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.5.0",
+    "pg": "^8.23.1"
+  }
+}
